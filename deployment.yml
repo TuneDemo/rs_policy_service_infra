@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: policy-service
+  labels:
+    app: policy-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: policy-service
+  template:
+    metadata:
+      labels:
+        app: policy-service
+    spec:
+      containers:
+      - name: rs_policy_service
+        image: indikak2005/rs_policy_service:latest
+        imagePullPolicy: Always
+        ports:
+          - name: http
+            containerPort: 9090
