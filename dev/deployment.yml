@@ -15,8 +15,8 @@ spec:
         app: policy-service
     spec:
       containers:
-      - name: rs_policy_service
-        image: indikak2005/rs_policy_service:97775977d403a105e8149876f7cad164d2ab76ed
+      - name: policy-service
+        image: indikak2005/policy-service:97775977d403a105e8149876f7cad164d2ab76ed
         imagePullPolicy: Always
         ports:
           - name: http
