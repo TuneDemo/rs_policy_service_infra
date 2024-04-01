@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: policy-service
-        image: indikak2005/policy-service:cb432a7e0b40c4bbd906f331a6fb9c5598501496
+        image: indikak2005/policy-service:1678b1c22870134717d7a212af631d2084b292d6
         imagePullPolicy: Always
         ports:
           - name: http
