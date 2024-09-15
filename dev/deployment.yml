@@ -5,7 +5,7 @@ metadata:
   labels:
     app: policy-service
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: policy-service
